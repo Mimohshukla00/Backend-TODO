@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 // const db = process.env.DATABASE_URL;
 const dbConnect = () => {
+    console.log("mimohshukla")
   // TO FEED the  database with some data, use this code:
   mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
