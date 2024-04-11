@@ -21,4 +21,4 @@ const todoschema = new mongoose.Schema({
     default: Date.now(),
   },
 });
-module.exports = mongoose.node("Todo", todoschema);
+module.exports = mongoose.model("todo", todoschema);
