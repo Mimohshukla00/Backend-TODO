@@ -1,5 +1,5 @@
 // create controller of todo list
-const Todo = require("..models/Todo");
+const Todo = require("../models/Todo");
 
 // define route handler
 
@@ -16,8 +16,8 @@ exports.createTodo = async (req, res) => {
       message: "Todo created successfully",
     });
   } catch (error) {
-    console.error(err);
-    console.log(err);
+    console.error(error);
+    console.log(error);
     res.status(500).json({
       status: "error",
       data: "internal server error",
