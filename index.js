@@ -1,10 +1,10 @@
+// add this in package.json
+// "start": "node index.js",
+// "dev":"nodemon index.js"
+
 const express = require("express");
 const app = express();
-app.listen(3000, () => {
-  console.log("mimohshukla's sever started");
-});
 
-// add this in package.json
-
-// "start": "node index.js",
-//     "dev":"nodemon index.js"
+// load config from env file
+require("dotenv").config();
+const PORT = process.env.PORT || 5000;
